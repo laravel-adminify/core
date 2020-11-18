@@ -3,11 +3,11 @@
 namespace Adminify\Foundation;
 
 use Closure;
-use JsonSerializable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
+use JsonSerializable;
 use Opis\Closure\SerializableClosure;
 
 class PropertiesHolder implements Arrayable, JsonSerializable

@@ -5,7 +5,15 @@ namespace Adminify\Components\Traits\Tailwind;
 trait Layout
 {
     /**
-     * Set element's box-sizing
+     * Add class to classes array.
+     *
+     * @param string $class
+     * @return static
+     */
+    abstract public function addClass(string $class);
+
+    /**
+     * Set element's box-sizing.
      *
      * @param string $type ['border', 'content']
      * @return static
@@ -16,7 +24,7 @@ trait Layout
     }
 
     /**
-     * Set element's box-sizing to border-box
+     * Set element's box-sizing to border-box.
      *
      * @return static
      */
@@ -26,7 +34,7 @@ trait Layout
     }
 
     /**
-     * Set element's box-sizing to content-box
+     * Set element's box-sizing to content-box.
      *
      * @return static
      */
@@ -36,7 +44,7 @@ trait Layout
     }
 
     /**
-     * To position the element below all preceding floated elements
+     * To position the element below all preceding floated elements.
      *
      * @return static
      */
@@ -46,7 +54,7 @@ trait Layout
     }
 
     /**
-     * Clearfix
+     * Clearfix.
      *
      * @return static
      */
@@ -56,7 +64,7 @@ trait Layout
     }
 
     /**
-     * Position the element below any preceding left-floated elements
+     * Position the element below any preceding left-floated elements.
      *
      * @return static
      */
@@ -66,7 +74,7 @@ trait Layout
     }
 
     /**
-     * To reset any clears that are applied to the element
+     * To reset any clears that are applied to the element.
      *
      * @return static
      */
@@ -76,7 +84,7 @@ trait Layout
     }
 
     /**
-     * Position the element below any preceding right-floated elements
+     * Position the element below any preceding right-floated elements.
      *
      * @return static
      */
@@ -86,7 +94,7 @@ trait Layout
     }
 
     /**
-     * Fixing element's width to the current breakpoint
+     * Fixing element's width to the current breakpoint.
      *
      * @return static
      */
@@ -96,7 +104,7 @@ trait Layout
     }
 
     /**
-     * Set element's display
+     * Set element's display.
      *
      * @param string $type ['block', 'inline-block', 'inline', 'flex', 'inline-flex', 'table', 'table-caption', 'table-cell', 'table-column', 'table-column-group', 'table-footer-group', 'table-header-group', 'table-row-group', 'table-row', 'flow-root', 'grid', 'inline-grid', 'contents']
      * @return static
@@ -107,7 +115,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to block
+     * Set element's display to block.
      *
      * @return static
      */
@@ -117,7 +125,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to contents
+     * Set element's display to contents.
      *
      * @return static
      */
@@ -127,7 +135,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to flex
+     * Set element's display to flex.
      *
      * @return static
      */
@@ -137,7 +145,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to flow-root
+     * Set element's display to flow-root.
      *
      * @return static
      */
@@ -147,7 +155,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to flow-root
+     * Set element's display to flow-root.
      *
      * @return static
      */
@@ -157,7 +165,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to grid
+     * Set element's display to grid.
      *
      * @return static
      */
@@ -167,7 +175,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to none
+     * Set element's display to none.
      *
      * @return static
      */
@@ -177,7 +185,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to inline
+     * Set element's display to inline.
      *
      * @return static
      */
@@ -187,7 +195,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to inline-block
+     * Set element's display to inline-block.
      *
      * @return static
      */
@@ -197,7 +205,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to inline-flex
+     * Set element's display to inline-flex.
      *
      * @return static
      */
@@ -207,7 +215,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to inline-grid
+     * Set element's display to inline-grid.
      *
      * @return static
      */
@@ -217,7 +225,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to none
+     * Set element's display to none.
      *
      * @return static
      */
@@ -227,7 +235,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table
+     * Set element's display to table.
      *
      * @return static
      */
@@ -237,7 +245,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-caption
+     * Set element's display to table-caption.
      *
      * @return static
      */
@@ -247,7 +255,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-cell
+     * Set element's display to table-cell.
      *
      * @return static
      */
@@ -257,7 +265,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-column
+     * Set element's display to table-column.
      *
      * @return static
      */
@@ -267,7 +275,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-column-group
+     * Set element's display to table-column-group.
      *
      * @return static
      */
@@ -277,7 +285,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-footer-group
+     * Set element's display to table-footer-group.
      *
      * @return static
      */
@@ -287,7 +295,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-header-group
+     * Set element's display to table-header-group.
      *
      * @return static
      */
@@ -297,7 +305,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-row
+     * Set element's display to table-row.
      *
      * @return static
      */
@@ -307,7 +315,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to table-row-group
+     * Set element's display to table-row-group.
      *
      * @return static
      */
@@ -317,7 +325,7 @@ trait Layout
     }
 
     /**
-     * Float the element to the left of its container
+     * Float the element to the left of its container.
      *
      * @return static
      */
@@ -327,7 +335,7 @@ trait Layout
     }
 
     /**
-     * Remove float of the element
+     * Remove float of the element.
      *
      * @return static
      */
@@ -337,7 +345,7 @@ trait Layout
     }
 
     /**
-     * Float the element to the right of its container
+     * Float the element to the right of its container.
      *
      * @return static
      */
@@ -347,7 +355,7 @@ trait Layout
     }
 
     /**
-     * Set element's display to none
+     * Set element's display to none.
      *
      * @return static
      */
@@ -368,7 +376,7 @@ trait Layout
     }
 
     /**
-     * Controlling how the element handles content that is too large for the container (horizontal)
+     * Controlling how the element handles content that is too large for the container (horizontal).
      *
      * @param string $type ['auto', 'hidden', 'visible', 'scroll']
      * @return static
@@ -379,7 +387,7 @@ trait Layout
     }
 
     /**
-     * Controlling how the element handles content that is too large for the container (vertical)
+     * Controlling how the element handles content that is too large for the container (vertical).
      *
      * @param string $type ['auto', 'hidden', 'visible', 'scroll']
      * @return static
@@ -390,7 +398,7 @@ trait Layout
     }
 
     /**
-     * Add scrollbars to the element in the event that its content overflows the bounds of that element
+     * Add scrollbars to the element in the event that its content overflows the bounds of that element.
      *
      * @return static
      */
@@ -400,7 +408,7 @@ trait Layout
     }
 
     /**
-     * To clip any content within the element that overflows the bounds of that element
+     * To clip any content within the element that overflows the bounds of that element.
      *
      * @return static
      */
@@ -410,7 +418,7 @@ trait Layout
     }
 
     /**
-     * To prevent content within the element from being clipped
+     * To prevent content within the element from being clipped.
      *
      * @return static
      */
@@ -420,7 +428,7 @@ trait Layout
     }
 
     /**
-     * Add scrollbars to the element
+     * Add scrollbars to the element.
      *
      * @return static
      */
@@ -430,7 +438,7 @@ trait Layout
     }
 
     /**
-     * Allow horizontal scrolling if needed
+     * Allow horizontal scrolling if needed.
      *
      * @return static
      */
@@ -440,7 +448,7 @@ trait Layout
     }
 
     /**
-     * Allow vertical scrolling if needed
+     * Allow vertical scrolling if needed.
      *
      * @return static
      */
@@ -450,7 +458,7 @@ trait Layout
     }
 
     /**
-     * To clip any content within the element that overflows the bounds of that element horizontal
+     * To clip any content within the element that overflows the bounds of that element horizontal.
      *
      * @return static
      */
@@ -460,7 +468,7 @@ trait Layout
     }
 
     /**
-     * To clip any content within the element that overflows the bounds of that element vertical
+     * To clip any content within the element that overflows the bounds of that element vertical.
      *
      * @return static
      */
@@ -470,7 +478,7 @@ trait Layout
     }
 
     /**
-     * To prevent content within the element from being clipped horizontal
+     * To prevent content within the element from being clipped horizontal.
      *
      * @return static
      */
@@ -480,7 +488,7 @@ trait Layout
     }
 
     /**
-     * To prevent content within the element from being clipped vertical
+     * To prevent content within the element from being clipped vertical.
      *
      * @return static
      */
@@ -490,7 +498,7 @@ trait Layout
     }
 
     /**
-     * Add horizontal scrollbar to the element
+     * Add horizontal scrollbar to the element.
      *
      * @return static
      */
@@ -500,7 +508,7 @@ trait Layout
     }
 
     /**
-     * Add vertical scrollbar to the element
+     * Add vertical scrollbar to the element.
      *
      * @return static
      */
@@ -510,7 +518,7 @@ trait Layout
     }
 
     /**
-     * Controlling how a replaced element's content should be resized
+     * Controlling how a replaced element's content should be resized.
      *
      * @param string $type ['contain', 'cover', 'fill', 'none', 'scale-down']
      * @return static
@@ -521,7 +529,7 @@ trait Layout
     }
 
     /**
-     * Resize the element's content to stay contained within its container
+     * Resize the element's content to stay contained within its container.
      *
      * @return static
      */
@@ -531,7 +539,7 @@ trait Layout
     }
 
     /**
-     * Resize the element's content to cover its container
+     * Resize the element's content to cover its container.
      *
      * @return static
      */
@@ -541,7 +549,7 @@ trait Layout
     }
 
     /**
-     * Stretch the element's content to fit its container
+     * Stretch the element's content to fit its container.
      *
      * @return static
      */
@@ -551,7 +559,7 @@ trait Layout
     }
 
     /**
-     * Display the element's content at its original size ignoring the container size
+     * Display the element's content at its original size ignoring the container size.
      *
      * @return static
      */
@@ -561,7 +569,7 @@ trait Layout
     }
 
     /**
-     * Display the element's content at its original size but scale it down to fit its container if necessary
+     * Display the element's content at its original size but scale it down to fit its container if necessary.
      *
      * @return static
      */
@@ -571,7 +579,7 @@ trait Layout
     }
 
     /**
-     * To specify how a replaced element's content should be positioned within its container
+     * To specify how a replaced element's content should be positioned within its container.
      *
      * @param string $type ['bottom', 'center', 'left', 'left-bottom', 'left-top', 'right', 'right-bottom', 'right-top', 'top']
      * @return static
@@ -582,7 +590,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in bottom of container
+     * Element's content should be positioned in bottom of container.
      *
      * @return static
      */
@@ -592,7 +600,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in center of container
+     * Element's content should be positioned in center of container.
      *
      * @return static
      */
@@ -602,7 +610,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in left of container
+     * Element's content should be positioned in left of container.
      *
      * @return static
      */
@@ -612,7 +620,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in left-bottom of container
+     * Element's content should be positioned in left-bottom of container.
      *
      * @return static
      */
@@ -622,7 +630,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in left-top of container
+     * Element's content should be positioned in left-top of container.
      *
      * @return static
      */
@@ -632,7 +640,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in right of container
+     * Element's content should be positioned in right of container.
      *
      * @return static
      */
@@ -642,7 +650,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in right-bottom of container
+     * Element's content should be positioned in right-bottom of container.
      *
      * @return static
      */
@@ -652,7 +660,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in right-top of container
+     * Element's content should be positioned in right-top of container.
      *
      * @return static
      */
@@ -662,7 +670,7 @@ trait Layout
     }
 
     /**
-     * Element's content should be positioned in top of container
+     * Element's content should be positioned in top of container.
      *
      * @return static
      */
