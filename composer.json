@@ -1,0 +1,55 @@
+{
+    "name": "laravel-adminify/laravel-adminify",
+    "description": "Admin panel for Laravel",
+    "keywords": [
+        "laravel-adminify",
+        "laravel-adminify"
+    ],
+    "homepage": "https://github.com/laravel-adminify/laravel-adminify",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "amir alizadeh",
+            "email": "amiralizadeh9480@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^8.0",
+        "opis/closure": "^3.6"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adminify\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adminify\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adminify\\AdminifyServiceProvider"
+            ],
+            "aliases": {
+                "Adminify": "Adminify\\Support\\Facades\\Adminify"
+            }
+        }
+    }
+}
